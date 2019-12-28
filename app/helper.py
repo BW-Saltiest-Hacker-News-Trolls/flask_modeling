@@ -20,4 +20,5 @@ def strip_tags(html):
 def preprocess(text):
     text = strip_tags(text)
     text = re.sub('\s+', ' ', text)
+    text = text.strip()
     return text
